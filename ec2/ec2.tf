@@ -18,9 +18,9 @@ resource "aws_security_group" "allow_ssh_ter"{
         ipv6_cidr_blocks = ["::/0"]
     }
 
-    # tags = {
-    #     Name = "allow_sshh"
-    # }
+    tags = {
+        Name = "allow_sshh"
+    }
 }
 
 
