@@ -1,5 +1,4 @@
-resource "aws_security_group" "allow_ssh_ter"
-{
+resource "aws_security_group" "allow_ssh_ter"{
     name = "Allow_sshh_ter"
     description = "Allow port number 22 for ssh access"
 
@@ -18,4 +17,12 @@ resource "aws_security_group" "allow_ssh_ter"
         cidr_blocks      = ["0.0.0.0/0"]   #allow from every pne here
         ipv6_cidr_blocks = ["::/0"]
     }
+
+    # tags = {
+    #     Name = "allow_sshh"
+    # }
 }
+
+
+
+    
