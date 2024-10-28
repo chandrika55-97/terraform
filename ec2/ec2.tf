@@ -23,6 +23,13 @@ resource "aws_security_group" "allow_ssh_ter"{
     }
 }
 
-
+resource "aws_instance" "terraform"{
+    ami = "ami-09c813fb71547fc4f"
+    instance type = "t3.micro"
+    vpc_security_group_ids = [aws_security_group.allow_ssh_ter.id]
+    tags = {
+        Name = "terraform"
+    }
+}
 
     
