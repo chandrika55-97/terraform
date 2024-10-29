@@ -27,3 +27,4 @@ resource "aws_instance" "terraform"{
     tags = var.tags
 }
 
+}
