@@ -12,11 +12,11 @@ variable "instance_type"{
 variable "tags"{
     type = map
     default = {
-        Name = "backend"
-        Project = "expense"
-        Component = "backed"
+        Name        = "backend"
+        Project     = "expense"
+        Component   = "backed"
         Environment = "DEV"
-        Terraform = "true"
+        Terraform   = "true"
 
     }
 }
@@ -32,19 +32,19 @@ variable "sg_description"{
 
 variable "from_port"{
     default = 22
-    type = number
+    type    = number
 }
 
 variable "to_port"{
     default = 22
-    type = number
+    type    = number
 }
 
 variable "protocol"{
     default = "tcp"
-    type = string
+    type    = string
 }
 variable "ingress_cidr_blocks"{
     default = ["0.0.0.0/0"]
-    type = list(string)
+    type    = list(string)
 }
