@@ -5,8 +5,9 @@ variable "ami_id"{
 }
 
 variable "instance_type"{
-    type       = string
     default    = "t3.micro"
+    type       = string
+    
 }
 
 variable "tags"{
@@ -26,7 +27,7 @@ variable "sg_name"{
 }
 
 variable "sg_description"{
-    description = "Allow port number 22 for ssh access"
+    default = "Allow port number 22 for ssh access"
 
 }
 
