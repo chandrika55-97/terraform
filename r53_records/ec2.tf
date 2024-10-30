@@ -1,7 +1,7 @@
 
 resource "aws_instance" "terraform"{
     count = length(var.instance_name)
-    ami = "ami-09c813fb71547fc4f"
+    ami = data.aws_ami.joindevops.id
     instance_type = "t3.micro"
     vpc_security_group_ids = [aws_security_group.allow_ssh_ter.id]
     # tags = {
