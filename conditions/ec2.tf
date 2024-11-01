@@ -22,7 +22,7 @@ resource "aws_security_group" "allow_ssh_ter"{
         from_port        = 22
         to_port          = 22
         protocol         = "tcp"     # 
-        cidr_blocks      = ["0.0.0.0/0"]   #allow from every pne here
+        cidr_blocks      = ["0.0.0.0/0"]   #allow from everyone here
         ipv6_cidr_blocks = ["::/0"]
     }
 
