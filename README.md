@@ -1,3 +1,13 @@
+Have you added .gitignore file?
+
+If so, follow the steps -------------------
+#rm -rf .git
+#git init
+#git branch -m main
+#git remote add origin <repo https url>
+#git add . ; git commit -m "msg";git push origin main 
+
+
 ### TERRAFROM
 
 Below is the environment setup.
